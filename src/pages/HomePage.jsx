@@ -97,63 +97,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      <article className="reveal bg-red-900 text-white py-12 px-6 rounded-2xl m-4 shadow-lg max-w-4xl text-center">
-        <div className="flex flex-col">
-          <div className="flex justify-center mb-4">
-            <strong className="text-2xl text-black rounded-3xl border-transparent w-60 bg-white p-2">
-              Squid Game Movie North America Tour OnGoing!
-            </strong>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div className="flex justify-center">
-            <p className="mb-4 border-transparent text-xl rounded-3xl w-60 p-4 font-bold bg-black">
-              USA TOUR
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <span className="font-bold text-2xl mb-4 border-transparent flex items-center">
-              <span className="mr-2">NEW YORK</span>
-              <FaArrowRight className="mr-2" />
-              17TH-21ST
-            </span>
-            <span className="font-bold text-2xl mb-4 border-transparent flex items-center">
-              <span className="mr-2">LOS ANGELES</span>
-              <FaArrowRight className="mr-2" />
-              22ND-28TH
-            </span>
-            <span className="font-bold text-2xl mb-4 border-transparent flex items-center">
-              <span className="mr-2">DETROIT MI</span>
-              <FaArrowRight className="mr-2" />
-              29TH-30TH
-            </span>
-          </div>
-        </div>
-
-        <div className="mb-4 border-transparent text-xl rounded-3xl p-4 font-bold bg-black">
-          <p className="mb-4">America and Europe Tour OnGoing</p>
-          <span>
-            Scheduled between <strong>May till July</strong>As squidgame season
-            3 in a few weeks time, hurry and get your tickets. Byung Hun is
-            coming to a city near you
-          </span>
-          <p className="mb-6 text-sm italic underline mt-4">
-            Stay tuned for the official itinerary and ticket releases!
-          </p>
-        </div>
-
-        <div className="flex justify-center items-center mt-6">
-          <Link to="/tourdates">
-            <button className="flex justify-center bg-white hover:bg-gray-100 text-red-700 font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
-              <p className="flex flex-row items-center gap-2 uppercase">
-                Reservation <FaArrowAltCircleRight />
-              </p>
-            </button>
-          </Link>
-        </div>
-      </article>
-
       {/* Wildfire Incident Article */}
       <section className="reveal bg-white text-white py-12 px-6 rounded-2xl m-4 shadow-lg max-w-4xl">
         <h2 className="text-4xl text-black font-bold mb-6 border-b-4 border-yellow-400 inline-block pb-2">
