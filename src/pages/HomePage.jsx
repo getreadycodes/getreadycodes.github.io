@@ -21,7 +21,7 @@ const HomePage = () => {
         distance: '20px',
         delay: 200,
         reset: true,
-        easing: 'ease-in-out',
+        easing: 'ease-in',
       });
     }, 1000);
 
@@ -39,11 +39,7 @@ const HomePage = () => {
     <div className="min-h-screen flex flex-col items-center justify-center text-white">
       {/* 🎉 Announcement Banner */}
       {showAnnouncement && (
-        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg z-50 animate-bounce flex flex-col text-center">
-          <p>🎉 SQUIDGAME SEASON 3 TOUR ON GOING</p>
-          <Link to="/tickets" className="underline font-semibold">
-            Click here
-          </Link>
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black px-6 py-3 rounded-lg shadow-lg z-50 animate-bounce flex flex-col text-center">
           <span>[Merch, Auctions, Books & More], Go to shop now!!</span>
           <span>Happy shopping! 🛍️</span>
         </div>
@@ -52,49 +48,6 @@ const HomePage = () => {
       {/* 🎠 Image Carousel */}
       <div className="w-full max-w-4xl mb-8 reveal">
         <ImageCarousel />
-      </div>
-
-      {/* 🖼️ Event Poster + Ticket Section */}
-      <div className="px-4 py-8 w-full">
-        <div className="w-full flex justify-center">
-          <img
-            src={SquidParade}
-            alt="Squid Game Parade Event Poster"
-            className="rounded-xl shadow-lg w-full max-w-4xl object-cover"
-          />
-        </div>
-
-        <div className="bg-black text-white p-6 rounded-2xl shadow-lg max-w-4xl w-full mx-auto mt-10 text-center border border-pink-500">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-pink-400">
-            🎟️ Get Ticket to the Parade Finale
-          </h2>
-
-          <p className="mb-4 text-base sm:text-lg">
-            Secure your spot at the{" "}
-            <span className="font-bold">
-              Squid Game Parade Finale Fan Event
-            </span>{" "}
-            happening on <strong>June 28, 2025 at 19:30 KST</strong>!
-          </p>
-
-          <p className="mb-4 text-sm sm:text-md text-yellow-300 font-semibold">
-            ✈️ Each ticket includes a fully paid flight to the premiere and an
-            exclusive pre-show interaction with the main cast!
-          </p>
-
-          <p className="mb-6 text-base">
-            Mingle with stars like <strong>Lee Byung-hun</strong>,{" "}
-            <strong>Jung Ho-yeon</strong>, and <strong>Wi Ha-jun</strong> before
-            the event begins. This once-in-a-lifetime experience is limited to
-            VIP attendees only!
-          </p>
-
-          <Link to="/paradeticket" className="inline-block w-full sm:w-auto">
-            <button className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 sm:px-8 rounded-full transition duration-300 transform hover:scale-105 w-full sm:w-auto">
-              Get Ticket Now
-            </button>
-          </Link>
-        </div>
       </div>
 
       {/* Wildfire Incident Article */}
